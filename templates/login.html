@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="../static/jquery/jquery-3.6.0.js"></script>
+        <link type="text/css" rel="stylesheet" href="../static/bootstrap/css/bootstrap-grid.css"/>
+        <link type="text/css" rel="stylesheet" href="../static/bootstrap/css/bootstrap-reboot.css"/>
+        <link type="text/css" rel="stylesheet" href="../static/bootstrap/css/bootstrap.css"/>
+        <script type="text/javascript" src="../static/bootstrap/js/bootstrap.bundle.js"></script>
+        <script type="text/javascript" src="../static/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../static/popper/popper-utils.js"></script>
+        <script type="text/javascript" src="../static/popper/popper.js"></script>
+        <link type="image/jpg" rel="icon" href="../static/images/Icon.jpg"/>
+        <link type="text/css" rel="stylesheet" href="../static/css/login.css"/>
+        <title>WHITENOTE</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="card" style="width:488px;">
+                <img class="card-img-top" style="width:488px" src="../static/images/Logo.png">
+                <div class="card-body">
+                    <form action="/authenticate" method="post" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-8">
+                                    <label for="username">Nome de utilizador</label>
+                                </div>
+                                <div class="col-4" style="text-align:right">
+                                    <a href="/novoutilizador">Criar conta</a>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Indique o seu nome de utilizador" id="username" name="username" required>
+                            <div class="valid-feedback"></div>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Palavra-chave</label>
+                            <input type="password" class="form-control" placeholder="Indique a sua palavra-chave" id="password" name="password" required>
+                            <div class="valid-feedback"></div>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">Lembra-te de mim
+                            </label>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <a href="/recuperarpassword">Esqueceu a sua password?</a>
+                            </div>
+                            <div class="col-4" style="text-align:right">
+                                <button type="submit" class="btn btn-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                    </svg>
+                                    LOGIN
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
